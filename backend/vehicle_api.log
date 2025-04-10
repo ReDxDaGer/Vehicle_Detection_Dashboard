@@ -1,0 +1,115 @@
+2025-04-10 16:36:12,159 - __main__ - INFO - Database connection established successfully
+2025-04-10 16:39:14,302 - __main__ - INFO - Database connection established successfully
+2025-04-10 16:52:49,772 - __main__ - INFO - Database connection established successfully
+2025-04-10 16:54:24,227 - __main__ - INFO - Database connection established successfully
+2025-04-10 16:59:33,357 - __main__ - INFO - Fetching 10-second interval data since 2025-04-10 11:28:33.357831
+2025-04-10 16:59:34,490 - __main__ - ERROR - Error in get_ten_second_data: (psycopg2.errors.UndefinedColumn) column jaloli_thresholds_detections_counts.car_count does not exist
+LINE 1: ...d, jaloli_thresholds_detections_counts.timestamp, jaloli_thr...
+                                                             ^
+
+[SQL: SELECT jaloli_thresholds_detections_counts.id, jaloli_thresholds_detections_counts.timestamp, jaloli_thresholds_detections_counts.car_count, jaloli_thresholds_detections_counts.bike_count, jaloli_thresholds_detections_counts.truck_count, jaloli_thresholds_detections_counts.bus_count, jaloli_thresholds_detections_counts.auto_count, jaloli_thresholds_detections_counts.direction, jaloli_thresholds_detections_counts.interval_type 
+FROM jaloli_thresholds_detections_counts 
+WHERE jaloli_thresholds_detections_counts.timestamp >= %(timestamp_1)s AND jaloli_thresholds_detections_counts.interval_type = %(interval_type_1)s ORDER BY jaloli_thresholds_detections_counts.timestamp DESC]
+[parameters: {'timestamp_1': datetime.datetime(2025, 4, 10, 11, 28, 33, 357831), 'interval_type_1': '10sec'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-04-10 17:01:33,014 - __main__ - INFO - Fetching 10-second interval data since 2025-04-10 11:30:33.014267
+2025-04-10 17:01:33,188 - __main__ - ERROR - Error in get_ten_second_data: (psycopg2.errors.UndefinedColumn) column jaloli_thresholds_detections_counts.car_count does not exist
+LINE 1: ...d, jaloli_thresholds_detections_counts.timestamp, jaloli_thr...
+                                                             ^
+
+[SQL: SELECT jaloli_thresholds_detections_counts.id, jaloli_thresholds_detections_counts.timestamp, jaloli_thresholds_detections_counts.car_count, jaloli_thresholds_detections_counts.bike_count, jaloli_thresholds_detections_counts.truck_count, jaloli_thresholds_detections_counts.bus_count, jaloli_thresholds_detections_counts.auto_count, jaloli_thresholds_detections_counts.direction, jaloli_thresholds_detections_counts.interval_type 
+FROM jaloli_thresholds_detections_counts 
+WHERE jaloli_thresholds_detections_counts.timestamp >= %(timestamp_1)s AND jaloli_thresholds_detections_counts.interval_type = %(interval_type_1)s ORDER BY jaloli_thresholds_detections_counts.timestamp DESC]
+[parameters: {'timestamp_1': datetime.datetime(2025, 4, 10, 11, 30, 33, 14267), 'interval_type_1': '10sec'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-04-10 17:05:54,687 - __main__ - INFO - Fetching 10-second interval data since 2025-04-10 11:34:54.687336
+2025-04-10 17:05:54,783 - __main__ - ERROR - Error in get_ten_second_data: (psycopg2.errors.UndefinedColumn) column jaloli_thresholds_detections_counts.car_count does not exist
+LINE 1: ...d, jaloli_thresholds_detections_counts.timestamp, jaloli_thr...
+                                                             ^
+
+[SQL: SELECT jaloli_thresholds_detections_counts.id, jaloli_thresholds_detections_counts.timestamp, jaloli_thresholds_detections_counts.car_count, jaloli_thresholds_detections_counts.bike_count, jaloli_thresholds_detections_counts.truck_count, jaloli_thresholds_detections_counts.bus_count, jaloli_thresholds_detections_counts.auto_count, jaloli_thresholds_detections_counts.direction, jaloli_thresholds_detections_counts.interval_type 
+FROM jaloli_thresholds_detections_counts 
+WHERE jaloli_thresholds_detections_counts.timestamp >= %(timestamp_1)s AND jaloli_thresholds_detections_counts.interval_type = %(interval_type_1)s ORDER BY jaloli_thresholds_detections_counts.timestamp DESC]
+[parameters: {'timestamp_1': datetime.datetime(2025, 4, 10, 11, 34, 54, 687336), 'interval_type_1': '10sec'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-04-10 17:05:54,834 - __main__ - INFO - Fetching hourly tripline data from 2025-04-10 00:00:00
+2025-04-10 17:05:54,932 - __main__ - ERROR - Error in get_hourly_tripline_data: (psycopg2.errors.UndefinedColumn) column jaloli_thresholds_detections_counts.car_count does not exist
+LINE 1: ...d, jaloli_thresholds_detections_counts.timestamp, jaloli_thr...
+                                                             ^
+
+[SQL: SELECT jaloli_thresholds_detections_counts.id, jaloli_thresholds_detections_counts.timestamp, jaloli_thresholds_detections_counts.car_count, jaloli_thresholds_detections_counts.bike_count, jaloli_thresholds_detections_counts.truck_count, jaloli_thresholds_detections_counts.bus_count, jaloli_thresholds_detections_counts.auto_count, jaloli_thresholds_detections_counts.direction, jaloli_thresholds_detections_counts.interval_type 
+FROM jaloli_thresholds_detections_counts 
+WHERE jaloli_thresholds_detections_counts.timestamp >= %(timestamp_1)s AND jaloli_thresholds_detections_counts.interval_type = %(interval_type_1)s ORDER BY jaloli_thresholds_detections_counts.timestamp]
+[parameters: {'timestamp_1': datetime.datetime(2025, 4, 10, 0, 0), 'interval_type_1': 'hourly'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-04-10 17:05:54,981 - __main__ - INFO - Fetching daily summary for 2025-04-10
+2025-04-10 17:05:55,085 - __main__ - ERROR - Error in get_daily_tripline_summary: (psycopg2.errors.UndefinedColumn) column jaloli_thresholds_detections_counts.car_count does not exist
+LINE 1: ...d, jaloli_thresholds_detections_counts.timestamp, jaloli_thr...
+                                                             ^
+
+[SQL: SELECT jaloli_thresholds_detections_counts.id, jaloli_thresholds_detections_counts.timestamp, jaloli_thresholds_detections_counts.car_count, jaloli_thresholds_detections_counts.bike_count, jaloli_thresholds_detections_counts.truck_count, jaloli_thresholds_detections_counts.bus_count, jaloli_thresholds_detections_counts.auto_count, jaloli_thresholds_detections_counts.direction, jaloli_thresholds_detections_counts.interval_type 
+FROM jaloli_thresholds_detections_counts 
+WHERE jaloli_thresholds_detections_counts.timestamp BETWEEN %(timestamp_1)s AND %(timestamp_2)s AND jaloli_thresholds_detections_counts.interval_type = %(interval_type_1)s]
+[parameters: {'timestamp_1': datetime.datetime(2025, 4, 10, 0, 0), 'timestamp_2': datetime.datetime(2025, 4, 10, 23, 59, 59, 999999), 'interval_type_1': 'daily'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-04-10 17:06:05,205 - __main__ - INFO - Fetching 10-second interval data since 2025-04-10 11:35:05.205419
+2025-04-10 17:06:05,563 - __main__ - ERROR - Error in get_ten_second_data: (psycopg2.errors.UndefinedColumn) column jaloli_thresholds_detections_counts.car_count does not exist
+LINE 1: ...d, jaloli_thresholds_detections_counts.timestamp, jaloli_thr...
+                                                             ^
+
+[SQL: SELECT jaloli_thresholds_detections_counts.id, jaloli_thresholds_detections_counts.timestamp, jaloli_thresholds_detections_counts.car_count, jaloli_thresholds_detections_counts.bike_count, jaloli_thresholds_detections_counts.truck_count, jaloli_thresholds_detections_counts.bus_count, jaloli_thresholds_detections_counts.auto_count, jaloli_thresholds_detections_counts.direction, jaloli_thresholds_detections_counts.interval_type 
+FROM jaloli_thresholds_detections_counts 
+WHERE jaloli_thresholds_detections_counts.timestamp >= %(timestamp_1)s AND jaloli_thresholds_detections_counts.interval_type = %(interval_type_1)s ORDER BY jaloli_thresholds_detections_counts.timestamp DESC]
+[parameters: {'timestamp_1': datetime.datetime(2025, 4, 10, 11, 35, 5, 205419), 'interval_type_1': '10sec'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-04-10 17:06:05,771 - __main__ - INFO - Fetching hourly tripline data from 2025-04-10 00:00:00
+2025-04-10 17:06:06,178 - __main__ - ERROR - Error in get_hourly_tripline_data: (psycopg2.errors.UndefinedColumn) column jaloli_thresholds_detections_counts.car_count does not exist
+LINE 1: ...d, jaloli_thresholds_detections_counts.timestamp, jaloli_thr...
+                                                             ^
+
+[SQL: SELECT jaloli_thresholds_detections_counts.id, jaloli_thresholds_detections_counts.timestamp, jaloli_thresholds_detections_counts.car_count, jaloli_thresholds_detections_counts.bike_count, jaloli_thresholds_detections_counts.truck_count, jaloli_thresholds_detections_counts.bus_count, jaloli_thresholds_detections_counts.auto_count, jaloli_thresholds_detections_counts.direction, jaloli_thresholds_detections_counts.interval_type 
+FROM jaloli_thresholds_detections_counts 
+WHERE jaloli_thresholds_detections_counts.timestamp >= %(timestamp_1)s AND jaloli_thresholds_detections_counts.interval_type = %(interval_type_1)s ORDER BY jaloli_thresholds_detections_counts.timestamp]
+[parameters: {'timestamp_1': datetime.datetime(2025, 4, 10, 0, 0), 'interval_type_1': 'hourly'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-04-10 17:08:46,404 - __main__ - INFO - Database connection established successfully
+2025-04-10 17:08:50,643 - __main__ - INFO - Fetching 10-second interval data since 2025-04-10 11:37:50.643390
+2025-04-10 17:08:52,735 - __main__ - ERROR - Error in get_ten_second_data: (psycopg2.errors.UndefinedColumn) column jaloli_thresholds_detections_counts.direction does not exist
+LINE 1: ...truck, jaloli_thresholds_detections_counts.total, jaloli_thr...
+                                                             ^
+
+[SQL: SELECT jaloli_thresholds_detections_counts.id, jaloli_thresholds_detections_counts.timestamp, jaloli_thresholds_detections_counts.camera_id, jaloli_thresholds_detections_counts.auto, jaloli_thresholds_detections_counts.bus, jaloli_thresholds_detections_counts.car, jaloli_thresholds_detections_counts.bike, jaloli_thresholds_detections_counts.truck, jaloli_thresholds_detections_counts.total, jaloli_thresholds_detections_counts.direction, jaloli_thresholds_detections_counts.interval_type 
+FROM jaloli_thresholds_detections_counts 
+WHERE jaloli_thresholds_detections_counts.timestamp >= %(timestamp_1)s AND jaloli_thresholds_detections_counts.interval_type = %(interval_type_1)s ORDER BY jaloli_thresholds_detections_counts.timestamp DESC]
+[parameters: {'timestamp_1': datetime.datetime(2025, 4, 10, 11, 37, 50, 643390), 'interval_type_1': '10sec'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-04-10 17:09:19,207 - __main__ - INFO - Fetching 10-second interval data since 2025-04-10 11:38:19.207074
+2025-04-10 17:09:19,309 - __main__ - ERROR - Error in get_ten_second_data: (psycopg2.errors.UndefinedColumn) column jaloli_thresholds_detections_counts.direction does not exist
+LINE 1: ...truck, jaloli_thresholds_detections_counts.total, jaloli_thr...
+                                                             ^
+
+[SQL: SELECT jaloli_thresholds_detections_counts.id, jaloli_thresholds_detections_counts.timestamp, jaloli_thresholds_detections_counts.camera_id, jaloli_thresholds_detections_counts.auto, jaloli_thresholds_detections_counts.bus, jaloli_thresholds_detections_counts.car, jaloli_thresholds_detections_counts.bike, jaloli_thresholds_detections_counts.truck, jaloli_thresholds_detections_counts.total, jaloli_thresholds_detections_counts.direction, jaloli_thresholds_detections_counts.interval_type 
+FROM jaloli_thresholds_detections_counts 
+WHERE jaloli_thresholds_detections_counts.timestamp >= %(timestamp_1)s AND jaloli_thresholds_detections_counts.interval_type = %(interval_type_1)s ORDER BY jaloli_thresholds_detections_counts.timestamp DESC]
+[parameters: {'timestamp_1': datetime.datetime(2025, 4, 10, 11, 38, 19, 207074), 'interval_type_1': '10sec'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-04-10 17:09:19,357 - __main__ - INFO - Fetching hourly tripline data from 2025-04-10 00:00:00
+2025-04-10 17:09:19,456 - __main__ - ERROR - Error in get_hourly_tripline_data: (psycopg2.errors.UndefinedColumn) column jaloli_thresholds_detections_counts.direction does not exist
+LINE 1: ...truck, jaloli_thresholds_detections_counts.total, jaloli_thr...
+                                                             ^
+
+[SQL: SELECT jaloli_thresholds_detections_counts.id, jaloli_thresholds_detections_counts.timestamp, jaloli_thresholds_detections_counts.camera_id, jaloli_thresholds_detections_counts.auto, jaloli_thresholds_detections_counts.bus, jaloli_thresholds_detections_counts.car, jaloli_thresholds_detections_counts.bike, jaloli_thresholds_detections_counts.truck, jaloli_thresholds_detections_counts.total, jaloli_thresholds_detections_counts.direction, jaloli_thresholds_detections_counts.interval_type 
+FROM jaloli_thresholds_detections_counts 
+WHERE jaloli_thresholds_detections_counts.timestamp >= %(timestamp_1)s AND jaloli_thresholds_detections_counts.interval_type = %(interval_type_1)s ORDER BY jaloli_thresholds_detections_counts.timestamp]
+[parameters: {'timestamp_1': datetime.datetime(2025, 4, 10, 0, 0), 'interval_type_1': 'hourly'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-04-10 17:09:19,505 - __main__ - INFO - Fetching daily summary for 2025-04-10
+2025-04-10 17:09:19,614 - __main__ - ERROR - Error in get_daily_tripline_summary: (psycopg2.errors.UndefinedColumn) column jaloli_thresholds_detections_counts.direction does not exist
+LINE 1: ...truck, jaloli_thresholds_detections_counts.total, jaloli_thr...
+                                                             ^
+
+[SQL: SELECT jaloli_thresholds_detections_counts.id, jaloli_thresholds_detections_counts.timestamp, jaloli_thresholds_detections_counts.camera_id, jaloli_thresholds_detections_counts.auto, jaloli_thresholds_detections_counts.bus, jaloli_thresholds_detections_counts.car, jaloli_thresholds_detections_counts.bike, jaloli_thresholds_detections_counts.truck, jaloli_thresholds_detections_counts.total, jaloli_thresholds_detections_counts.direction, jaloli_thresholds_detections_counts.interval_type 
+FROM jaloli_thresholds_detections_counts 
+WHERE jaloli_thresholds_detections_counts.timestamp BETWEEN %(timestamp_1)s AND %(timestamp_2)s AND jaloli_thresholds_detections_counts.interval_type = %(interval_type_1)s]
+[parameters: {'timestamp_1': datetime.datetime(2025, 4, 10, 0, 0), 'timestamp_2': datetime.datetime(2025, 4, 10, 23, 59, 59, 999999), 'interval_type_1': 'daily'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
